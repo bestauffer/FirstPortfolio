@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <title>Blake's Portfolio</title>
+      <meta charset="utf-8">
+      <meta name="description" content="CSI443 Web site.  Text here shows up in the description listed in search engine results.">
+      <meta name="keywords" content="Blake Stauffer CSS HTML XML ISIT320">
+      <meta name="author" content="Blake Stauffer">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/portfolio.css">
+    
+  </head>
+  <body background-color="lightblue">
+    
+    
+    <div class="container-fluid" >
+      
+      <div class="Center">
+        
+        <h1>KnowBetter App</h1>
+        <h6><a href="http://knowbetter.hopto.org" target="_blank">knowbetter.hopto.org</a></h6>
+        <p>
+          KnowBetter is a platform that supports users with skin sensitivities to be confident in their cosmetics and skincare purchases. It 
+          takes in text input and compares it to a user-built personal database. This will shorten the process of purchasing skincare for those 
+          with sensitive or allergies. Instead of reading every ingredient list they can list all the ingredients they are worried about into a 
+          data base through the KnowBetter app. Then later they can return to the app, enter an ingredient list and then the KnowBetter app will 
+          refer to the data base and present a warning to the user with any similarities it finds. The app will eventually be able to organize the 
+          data based on severity of the sensitivity and will also have an option to link two ingredient names together (i.e., you link the common 
+          name with the scientific name). 
+        </p>
+        <img src="../images/Picture1.png" class ="PortImg" alt="UI Layout">
+      </div>      
+      <br />
+      <div class="Center">
+        <h3>App Build</h3>
+        <p>
+          The KnowBetter app is built on a MVC app using Entity Framework. The Server Database for the app uses linked tables to save all the data. We
+          also use an API call to display ingredient data when the user clicks on a product's ingredient. The app and the database are both hosted 
+          separately on Azure.
+        </p>
+        <h3>Current/Future Features</h3>
+        <p>
+          KnowBetter allows users to search a list of cosmetic ingredients, add ingredients to a list of favorites or a list of items to avoid. 
+          Users are able to search a database of products, and compare a product's ingredients to their list of favorites or items to avoid. 
+          It will eventually include user-submitted ingredients and products as well.
+        </p>
+        <h3>Team Dynamics</h3>
+        <p>
+          As a team we managed our code using GitHub for merge management and version control.  We created a kanban board on GitHub and assigned
+          tasks to each team member and the tasks would be linked to our individual pull requests and the tasks would be automatically completed
+          once the pull request was approved.
+        </p>
+        <h3>My contribution</h3>
+        <img src="../images/contribution.jpg" class ="PortImg" alt="code contribution">
+        <p>
+          For this project I was tasked with Creating the following Views: Ingredient Library, Dashboard, Edit Profile, Avoid Ingredient, & Favorite Ingredient.
+          I also went through on the final version and cleaned up all unnecessary code that was in our app. The portion I struggled with the most was Creating the
+          Flexbox CSS for the Avoid/Favorite View for delete buttons. I eventually discovered I had the main container inside of our loop so it was creating 
+          multiple container with a single container inside instead one one container with multiple containers inside.  The other issue I faced with this app was
+          learning the framework and how to use it since this is the second MVC app I have helped to build.  Other than the code contributions I also was in charge
+          of weekly documentation for 3 weeks and I assisted with testing.
+        </p>
+        <h3>Overall Experience</h3>
+        <p>
+          From this experience I learned that I need to spend more time coding with a database because I was having issues early on with getting the delete button in
+          avoid ingredients working. This experience has made me want to learn more programming platforms so I can migrate a project onto a new platform if 
+          I wanted to.  What I've learned is that I have a lot more growing to do as a programmer but also that I can adapt to platforms I haven't had much experience
+          with. From finishing this project I learned how to better utilize divs as containers as have formatted as such in CSS. I never really understood CSS much
+          before this app and I definitely feel like I have a much better grasp on CSS now. If I were to recommend anything to someone attempting a similar app it would
+          be to leave most of the CSS and styling until the very end because there were so many times we were changing around the way we were calling
+          the CSS files and the layout.  I also would say to spend more time learning the platform that you are going to use because there's so many little things built 
+          into these platforms that normally go unused due to lack of knowledge.
+        </p>
+      </div>
+      
+
+      <p><a href="/">Main</a></p>
+    </div>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
